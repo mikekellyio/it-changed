@@ -1,0 +1,33 @@
+{
+  "name": "it-changed",
+  "version": "0.1.0",
+  "description": "monitor a store for when objects change and emit event when they do",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --presets env src -d ./ --ignore src/index.test.js",
+    "dev": "babel --presets env src -d ./ --watch --ignore src/index.test.js",
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikekellyio/it-changed"
+  },
+  "keywords": [
+    "object",
+    "state",
+    "change"
+  ],
+  "author": "mikekellyio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikekellyio/it-changed/issues"
+  },
+  "homepage": "https://github.com/mikekellyio/it-changed",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^25.0.0"
+  }
+}
